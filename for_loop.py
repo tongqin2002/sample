@@ -9,8 +9,8 @@ for i in range(10):
     print(i,msg)
 print()
 
-i = 1
-for j in ('Beijing','Hongkong','London','Pairs','Berlin','Newyork','Tokyo','Seoul','Rome','Moscow'):
-    print(i,j)
-    i=i+1
-
+# 轮询列表
+City = ('Beijing','Hongkong','London','Pairs','Berlin','Newyork','Tokyo','Seoul','Rome','Moscow')
+for index, value in enumerate(City):
+    print(index, value)
+    
