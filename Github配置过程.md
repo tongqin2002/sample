@@ -133,3 +133,24 @@ remote: Resolving deltas: 100% (383/383), done.
 remote: Powered by GITEE.COM [GNK-6.4]
 To https://gitee.com/tongqin2002/samples.git
  * [new branch]      master -> master
+
+# 克隆git库（GitHub与gitee语法相同）
+tongq@PSBCTQ MINGW64 /d/PythonCodeLib (master|MERGING)
+$ git clone https://gitee.com/tongqin2002/samples sample_gitee
+
+tongq@PSBCTQ MINGW64 /d/PythonCodeLib (master|MERGING)
+$ cd sample_gitee/
+
+tongq@PSBCTQ MINGW64 /d/PythonCodeLib/sample_gitee (master)
+$ git remote -v
+origin  https://gitee.com/tongqin2002/samples (fetch)
+origin  https://gitee.com/tongqin2002/samples (push)
+
+tongq@PSBCTQ MINGW64 /d/PythonCodeLib/sample_gitee (master)
+$ git add .
+
+tongq@PSBCTQ MINGW64 /d/PythonCodeLib/sample_gitee (master)
+$ git commit -m "首次提交gitee库"
+
+tongq@PSBCTQ MINGW64 /d/PythonCodeLib/sample_gitee (master)
+$ git push -u origin master
