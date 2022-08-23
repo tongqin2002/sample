@@ -13,3 +13,4 @@ i = 1
 for j in ('Beijing','Hongkong','London','Pairs','Berlin','Newyork','Tokyo','Seoul','Rome','Moscow'):
     print(i,j)
     i=i+1
+
