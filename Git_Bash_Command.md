@@ -81,6 +81,8 @@ ssh -T git@github.com    #判断是否连通成功
 
 git init  #初始化仓库
 
+git config --list  #查看git所有配置信息
+
 git clone [url]  #拷贝一份远程仓库，也就是下载一个项目
 
 git status   #查看当前仓库状态
