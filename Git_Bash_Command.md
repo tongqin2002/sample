@@ -75,7 +75,7 @@ echo ‘内容’ >>文件名 #输出内容到文件中，每次输入都是追�
 # 2. git仓库管理基本bash
 
 ```bash
-ssh-keygen -t ed25519 -C "your_email@example.com"  #(邮箱和github注册邮箱保持一致)  创建SSH key（创建完成后在/C/Users/用户名下 id_ed25519.pub 添加到github）
+ssh-keygen -t ed25519 -C "your_email@example.com"  #(邮箱和github注册邮箱保持一致)  创建SSH key（创建完成后将生成的id_ed25519.pub 添加到github中）
 
 ssh -T git@github.com    #判断是否连通成功       
 
