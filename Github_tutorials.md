@@ -140,14 +140,9 @@ branch 'master' set up to track 'origin/master'.
 ```
 ---------------------
 
-# Gitee环境类似配置密钥（可以与GitHub公用pub密钥，灌入gitee网站）
+# Gitee环境类似配置密钥（可以与GitHub共用pub密钥）
 
-# 添加Gitee远程版本库（别名gitee_origin）
-```bash
-tongq@PSBCTQ MINGW64 /d/PythonCodeLib (master)
-$ git remote add gitee_origin https://gitee.com/tongqin2002/samples.git
-```
-# 测试远程仓库连通性
+## 登录Gitee将公钥灌入后，再执行下述代码，测试连通性
 
 ```bash
 tongq@PSBCTQ MINGW64 /d/PythonCodeLib (master)
@@ -160,7 +155,14 @@ Warning: Permanently added 'gitee.com' (ED25519) to the list of known hosts.
 git@gitee.com: Permission denied (publickey).
 ```
 
-# 查看当前配置远程仓库的具体信息
+## 添加Gitee远程版本库（别名gitee_origin）
+
+```bash
+tongq@PSBCTQ MINGW64 /d/PythonCodeLib (master)
+$ git remote add gitee_origin https://gitee.com/tongqin2002/samples.git
+```
+
+## 查看当前配置远程仓库的具体信息
 
 ```bash
 tongq@PSBCTQ MINGW64 /d/PythonCodeLib (master)
@@ -171,7 +173,7 @@ origin  https://github.com/tongqin2002/sample.git (fetch)
 origin  https://github.com/tongqin2002/sample.git (push)
 ```
 
-# 提交本地库到远程Gitee仓库
+## 提交本地库到远程Gitee仓库
 
 ```bash 
 tongq@PSBCTQ MINGW64 /d/PythonCodeLib (master)
@@ -224,5 +226,5 @@ git rm <file> #将文件从暂存区和工作区中删除
 git pull origin master:brantest #将远程主机 origin 的 master 分支拉取过来，与本地的 brantest 分支合并
 git pull origin master #如果远程分支是与当前分支合并，则冒号后面的部分可以省略
 git push <远程主机名> <本地分支名>:<远程分支名> #将本地的分支版本上传到远程并合并
-git push <远程主机名> <本地分支名> #如果本地分支名与远程分支名相同，则可以省略冒号：
+git push <远程主机名> <本地分支名> #如果本地分支名与远程分支名相同，则可以省略冒号
 ```
