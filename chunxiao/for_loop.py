@@ -15,11 +15,16 @@ for i in range(5):
         print(i,j)
 print()
 
-# 定义列表
+"""
+定义元组arr
+元组()和列表[]的不同之处在于：
+列表的元素是可以更改的，包括修改元素值，删除和插入元素，所以列表是可变序列；
+而元组一旦被创建，它的元素就不可更改了，所以元组是不可变序列
+"""
 arr = ('Beijing','Hongkong','London','Pairs','Berlin','Newyork','Tokyo','Seoul','Rome','Moscow')
-# 打印列表
+# 打印元组
 print(arr)
-# 轮询列表
+# 轮询元组
 for index, value in enumerate(arr):
     print(index, value)
 print()

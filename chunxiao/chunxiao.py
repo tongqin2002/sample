@@ -5,7 +5,7 @@ for i in range(10):
 # 打印空行
 print()
 
-# 遍历字符串数组
+# 遍历字符串元组
 j = 0
 for i in('chunxiao','xiaoxue','mama','baba'):
     print(j,i)
