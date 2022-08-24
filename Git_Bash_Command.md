@@ -151,3 +151,22 @@ git checkout -b dev origin/dev  #checkout远程的dev分支，在本地起名为
 
 git checkout -t origin/dev  #使用-t参数，它默认会在本地建立一个和远程分支名字一样的分支
 ```
+
+# 6. 常见问题
+
+## git clone报错：error RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054
+```bash 
+$ git config http.sslVerify "false" 
+$ git config http.postBuffer 524288000  # http.postBuffer默认上限为1M，调大上限设为500M
+
+HP@DESKTOP-1RIVFM3 MINGW64 /d/PythonCodeLib (master)
+$ git clone https://github.com/tongqin2002/Games
+Cloning into 'Games'...
+remote: Enumerating objects: 2869, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 2869 (delta 0), reused 2 (delta 0), pack-reused 2862
+Receiving objects: 100% (2869/2869), 469.94 MiB | 297.00 KiB/s, done.
+Resolving deltas: 100% (1079/1079), done.
+Updating files: 100% (883/883), done.
+```
