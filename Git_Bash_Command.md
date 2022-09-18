@@ -172,3 +172,22 @@ Receiving objects: 100% (2869/2869), 469.94 MiB | 297.00 KiB/s, done.
 Resolving deltas: 100% (1079/1079), done.
 Updating files: 100% (883/883), done.
 ```
+
+## You've successfully authenticated, but GitHub does not provide shell access.
+git push 的时候提示输入账号密码，现在 git 也不允许 http 连接，所以提供账号密码也没办法 push。
+虽然是用 git 命令push，但本质上仍然是 https，所以不允许提交。
+
+```bash
+查看远程 url 地址：
+git remote -v
+origin  https://github.com/tongqin2002/sample.git (fetch)
+origin  https://github.com/tongqin2002/sample.git (push)
+
+修改url链接
+git remote set-url origin git@github.com:tongqin2002/sample.git
+
+git remote -v
+origin  git@github.com:tongqin2002/sample.git (fetch)
+origin  git@github.com:tongqin2002/sample.git (push)
+```
+可以正常git push了
