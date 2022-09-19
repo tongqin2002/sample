@@ -3,7 +3,7 @@ URL:https://github.com/Dreamacro/clash/releases
 
 # Install Clash
 ```bash
-#打开终端进入下载的文件夹 
+# 打开终端进入下载的文件夹 
 cd /home/username/下载
 # 解压
 gunzip -d clash-linux-amd64-v1.7.1.gz
@@ -17,9 +17,9 @@ mv clash /opt/clash
 
 # 配置clash
 ```bash
-#下载clash配置文件config.yaml 在代理商那里复制订阅链接，替代 [订阅链接]
+# 下载clash配置文件config.yaml 在代理商那里复制订阅链接，替代 [订阅链接]
 wget -O config.yaml [订阅链接]
-#下载Country.mmdb 
+# 下载Country.mmdb 
 wget -O Country.mmdb https://www.sub-speeder.com/client-download/Country.mmdb
 ```
 > 注意：
@@ -36,9 +36,9 @@ Socks 代理为 127.0.0.1:7891
 
 # 启动clash
 ```bash
-#授权可执行权限 
+# 授权可执行权限 
 chmod +x clash 
-#可启动 Clash，同时启动 HTTP 代理和 Socks5 代理
+# 可启动 Clash，同时启动 HTTP 代理和 Socks5 代理
 ./clash -d . 
 ```
 至此就可以科学上网了
